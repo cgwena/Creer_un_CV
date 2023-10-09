@@ -7,20 +7,20 @@
     <title>CV - Gwenaëlle Boussès</title>
     <link rel="shortcut icon" type="image/png" href="/assets/icons/favicon.png">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <meta name="description" content="Mon CV en HTML et CSS">
 </head>
 
 <body>
     <header>
-        <div id="infos">
+        <div class="infos">
             <a href="/assets/pictures/Photo_identite_Gwenaelle_Bousses.jpg" target="_blank"><img
                     src="/assets/pictures/Photo_identite_Gwenaelle_Bousses.jpg" alt="image Jane Doe"></a>
             <h1>Gwenaëlle Boussès</h1>
             <h2>Développeuse web junior</h2>
         </div>
-        <div id="contact">
-            <div>
-                <a
-                    href="https://www.google.fr/maps/place/12+Rue+des+Oliviers,+53200+La+Roche-Neuville/@47.8746148,-0.754611,17z/data=!3m1!4b1!4m6!3m5!1s0x4808f12c7939a8a7:0xaefceff0de598651!8m2!3d47.8746112!4d-0.7520307!16s%2Fg%2F11c1fvm555?entry=ttu" target="_blank">
+        <div class="contact">
+            <div class="adresse">
+                <a href="https://www.google.fr/maps/place/12+Rue+des+Oliviers,+53200+La+Roche-Neuville/@47.8746148,-0.754611,17z/data=!3m1!4b1!4m6!3m5!1s0x4808f12c7939a8a7:0xaefceff0de598651!8m2!3d47.8746112!4d-0.7520307!16s%2Fg%2F11c1fvm555?entry=ttu" target="_blank">
                     <p id="adresse">12 Rue des Oliviers</p>
                     <p>53200 La Roche_Neuville</p>
                 </a>
@@ -31,20 +31,20 @@
     </header>
 
     <main>
-        <div id="side-bar">
-            <section id="about_me">
+        <div class="side-bar">
+            <section class="about_me">
                 <h2>A propos</h2>
                 <p>Après une reconversion dans le développement web, je cherche l'entreprise qui me permettra de montrer
                     tout mon potentiel !</p>
             </section>
-            <section id="languages">
+            <section>
                 <h2>Langues parlées</h2>
                 <ul>
                     <li>Français - Langue maternelle</li>
                     <li>Anglais - Experimenté (C2)</li><br>
                 </ul>
             </section>
-            <section id="hobbies">
+            <section>
                 <h2>Centres d'intérêt</h2>
                 <ul>
                     <li>Musique celtique</li>
@@ -53,13 +53,13 @@
                 </ul>
             </section>
         </div>
-        <div id="content">
-            <section id="professional_exp">
+        <div class="content">
+            <section>
                 <div class="title">
                     <div class="insertion"></div>
                     <h2>Expérience professionnelle</h2>
                 </div>
-                <div class="poste">
+                <div>
                     <h3>Professeur des écoles - Education Nationale</h3>
                     <p>De 2000 à 2024</p>
                     <ul>
@@ -73,37 +73,37 @@
                         <li>Planification et mise en place de projets pédagogiques.</li>
                     </ul>
             </section>
-            <section id="formation">
+            <section>
                 <div class="title">
                     <div class="insertion"></div>
                     <h2>Diplômes/Formations</h2>
                 </div>
-                <div class="school">
+                <div>
                     <h3>Titre RNCP - Développeur Web</h3>
                     <p>2023-2024</p>
                     <p>Centre Européen de Formation</p>
                 </div>
-                <div class="school">
+                <div>
                     <h3>Formation C#</h3>
                     <p>2023</p>
                     <p>Plateforme Microsoft Learn</p>
                 </div>
-                <div class="school">
+                <div>
                     <h3>Formation Python</h3>
                     <p>2022-2023</p>
                     <p>Université Libre de Bruxelles - Fun Mooc</p>
                 </div>
-                <div class="school">
+                <div>
                     <h3>Javascript</h3>
                     <p>2022-2023</p>
                     <p>freecodecamp - Openclassroom</p>
                 </div>
-                <div class="school">
+                <div>
                     <h3>HTML - CSS</h3>
                     <p>2022-2023</p>
                     <p>freecodecamp - Openclassroom</p>
                 </div>
-                <div class="school">
+                <div>
                     <h3>Maitrise Langue Littérature et Civilisation Étrangère - Anglais</h3>
                     <p>1998-1999</p>
                     <p>Université de Bretagne Ouest - Brest</p>
@@ -113,7 +113,7 @@
                     <p>1994-1995</p>
                 </div>
             </section>
-            <section id="skills">
+            <section>
                 <div class="title">
                     <div class="insertion"></div>
                     <h2>Compétences</h2>
@@ -129,7 +129,7 @@
     </main>
 
     <footer>
-        <div id="social_media">
+        <div class="social_media">
             <a class="logo" href="https://www.linkedin.com/in/gwenaëlle-boussès-499b13258/" target="_blank"><img
                     src="/assets/icons/linkedin.png" alt="logo linkedin"></a>
             <a class="logo" href="https://twitter.com/gwenaellebouss" target="_blank"><img
@@ -137,7 +137,7 @@
             <a class="logo" href="https://github.com/cgwena" target="_blank"><img src="/assets/icons/github.png"
                     alt="logo GitHub"></a>
         </div>
-        <p>Dernière mise à jour le 9 octobre 2023</p>
+        <small>Dernière mise à jour le <time datetime="2023-10-09">9 octobre 2023</time></small>
     </footer>
 
 </body>
