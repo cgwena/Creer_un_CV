@@ -4,18 +4,57 @@
         flex-direction: column;
     }
 
+    body {
+        padding: 10px;
+    }
+
     main {
         display: flex;
         flex-direction: column-reverse;
     }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.6rem;
+    }
+
+    p,
+    a,
+    ul, small {
+        font-size: 2.2rem;
+    }
+
+    .contact {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .adresse {
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 481px) {
-    #side-bar {
+    .side-bar {
         width: 25%;
     }
 
     #content {
         width: 75%;
     }
+
+    
+
 }
