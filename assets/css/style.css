@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+
+@font-face {
+    font-family: "Raleway";
+    src:
+        url(/assets/fonts/Raleway-VariableFont_wght.woff),
+        url(/assets/fonts/Raleway-VariableFont_wght.ttf) type("truetype");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-style: italic;
+    src: url(/assets/fonts/Raleway-Italic.woff),
+    url(/assets/fonts/Raleway-Italic.ttf) type("truetype");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: bold;
+    src: url(/assets/fonts/Raleway-Bold.woff),
+    url("/assets/fonts/Raleway-Bold.ttf") type("truetype");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+:root {
+    --color1: #782221;
+    --color2: #dbc2a4;
+    --color3: #2c1d27;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Lato", sans-serif;
+}
+
+p, a, ul {
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    color:white;
+}
+
+header {
+    background-color: var(--color1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+#infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    line-height: 60px;
+}
+
+#contact {
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;;
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    background-color: var(--color1);
+    color: white;
+}
+
+aside p,aside ul {
+    padding:25px;
+}
+aside h2 {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-left: 10px;
+    background-color: var(--color2);
+    color: black;
+}
+
+article {
+    padding: 25px;
+    width: 80%
+}
+
+.title {
+    display: flex;
+}
+
+article h2 {
+    background-color: var(--color2);
+    padding-left: 10px;
+    width:100%;
+    height: 30px;;
+}
+
+.insertion {
+    width: 8px;
+    height: 30px;
+    background-color: var(--color1);
+}
+
+article h3 {
+    padding: 20px;
+}
+
+article p, article ul {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--color1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 130px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    height:50px;
+}
+
+#social_media {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
