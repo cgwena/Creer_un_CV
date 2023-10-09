@@ -1,3 +1,5 @@
+@import url(/assets/css/mobile.css);
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
 
 @font-face {
@@ -81,16 +83,15 @@ main {
     display: flex;
 }
 
-aside {
-    width: 20%;
+#side-bar {
     background-color: var(--color1);
     color: white;
 }
 
-aside p,aside ul {
+#side-bar p,#side-bar ul {
     padding:25px;
 }
-aside h2 {
+#side-bar h2 {
     margin-top: 10px;
     margin-right: 20px;
     padding-left: 10px;
@@ -98,16 +99,15 @@ aside h2 {
     color: black;
 }
 
-article {
+#content {
     padding: 25px;
-    width: 80%
 }
 
 .title {
     display: flex;
 }
 
-article h2 {
+#content h2 {
     background-color: var(--color2);
     padding-left: 10px;
     width:100%;
@@ -120,11 +120,7 @@ article h2 {
     background-color: var(--color1);
 }
 
-article h3 {
-    padding: 20px;
-}
-
-article p, article ul {
+#content h3, #content p, #content ul {
     padding: 20px;
 }
 
