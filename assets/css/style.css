@@ -13,14 +13,14 @@
     font-family: "Raleway";
     font-style: italic;
     src: url(/assets/fonts/Raleway-Italic.woff),
-    url(/assets/fonts/Raleway-Italic.ttf) type("truetype");
+        url(/assets/fonts/Raleway-Italic.ttf) type("truetype");
 }
 
 @font-face {
     font-family: "Raleway";
     font-weight: bold;
     src: url(/assets/fonts/Raleway-Bold.woff),
-    url("/assets/fonts/Raleway-Bold.ttf") type("truetype");
+        url("/assets/fonts/Raleway-Bold.ttf") type("truetype");
 }
 
 * {
@@ -35,18 +35,31 @@
     --color3: #2c1d27;
 }
 
+body {
+    width: 1160px;
+    margin: auto;
+    border-right: 1px solid black;
+}
+
 h1,
 h2,
 h3 {
     font-family: "Lato", sans-serif;
 }
 
-p, a, ul {
+p,
+a,
+ul {
     font-family: "Raleway", sans-serif;
 }
 
 a {
-    color:white;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -58,9 +71,17 @@ header {
 }
 
 header img {
-    width: 200px;
     height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: -10px -10px 10px var(--color2), 10px 10px 10px var(--color2), 10px -10px 10px var(--color2), -10px 10px 10px var(--color2);
     margin: auto;
+    margin-top: 20px;
+}
+
+header img:hover {
+    cursor: zoom-in;
 }
 
 #infos {
@@ -76,7 +97,8 @@ header img {
     background-color: var(--color3);
     display: flex;
     justify-content: space-between;
-    padding: 20px;;
+    padding: 20px;
+    ;
 }
 
 main {
@@ -88,9 +110,11 @@ main {
     color: white;
 }
 
-#side-bar p,#side-bar ul {
-    padding:25px;
+#side-bar p,
+#side-bar ul {
+    padding: 25px;
 }
+
 #side-bar h2 {
     margin-top: 10px;
     margin-right: 20px;
@@ -99,29 +123,40 @@ main {
     color: black;
 }
 
+#about_me {
+    text-indent: 30px;
+}
+
 #content {
     padding: 25px;
 }
 
 .title {
     display: flex;
+    margin-top: 15px;
 }
 
 #content h2 {
     background-color: var(--color2);
     padding-left: 10px;
-    width:100%;
-    height: 30px;;
+    width: 100%;
+    height: 30px;
 }
 
 .insertion {
     width: 8px;
     height: 30px;
+    background-color: var(--color2);
+}
+
+.title:hover .insertion {
     background-color: var(--color1);
 }
 
-#content h3, #content p, #content ul {
-    padding: 20px;
+#content h3,
+#content p,
+#content ul {
+    padding: 10px;
 }
 
 footer {
@@ -136,9 +171,12 @@ footer {
     align-items: center;
 }
 
-.logo img{
+.logo img {
     height: 50px;
-    height:50px;
+    height: 50px;
+}
+.logo img:hover {
+    opacity: 0.7;
 }
 
 #social_media {
