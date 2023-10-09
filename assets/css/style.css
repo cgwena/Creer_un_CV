@@ -6,21 +6,21 @@
     font-family: "Raleway";
     src:
         url(/assets/fonts/Raleway-VariableFont_wght.woff),
-        url(/assets/fonts/Raleway-VariableFont_wght.ttf) type("truetype");
+        url(/assets/fonts/Raleway-VariableFont_wght.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "Raleway";
     font-style: italic;
     src: url(/assets/fonts/Raleway-Italic.woff),
-        url(/assets/fonts/Raleway-Italic.ttf) type("truetype");
+        url(/assets/fonts/Raleway-Italic.ttf), format("truetype");
 }
 
 @font-face {
     font-family: "Raleway";
     font-weight: bold;
     src: url(/assets/fonts/Raleway-Bold.woff),
-        url("/assets/fonts/Raleway-Bold.ttf") type("truetype");
+        url("/assets/fonts/Raleway-Bold.ttf"), format("truetype");
 }
 
 * {
